@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Annenberg.Web", "Annenberg.Web\Annenberg.Web.csproj", "{0B4EF985-22E7-4B24-8D97-FD59700E23CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Annenberg.Services", "Annenberg.Services\Annenberg.Services.csproj", "{9864A560-CC2A-4907-83A0-409412C9819A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B4EF985-22E7-4B24-8D97-FD59700E23CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4EF985-22E7-4B24-8D97-FD59700E23CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4EF985-22E7-4B24-8D97-FD59700E23CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4EF985-22E7-4B24-8D97-FD59700E23CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9864A560-CC2A-4907-83A0-409412C9819A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9864A560-CC2A-4907-83A0-409412C9819A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9864A560-CC2A-4907-83A0-409412C9819A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9864A560-CC2A-4907-83A0-409412C9819A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E962E955-9261-4E8D-92B9-DF45B3ABB85D}
+	EndGlobalSection
+EndGlobal
