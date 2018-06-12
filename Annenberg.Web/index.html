@@ -1,0 +1,74 @@
+<!-- Ignore this file. This will be deleted. This was just used to test google maps api. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+      <div>
+          <h1>Hello</h1>
+      </div>
+    <div id="map"></div>
+    <script>
+      var map;
+      var geocoder;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 10
+        });
+        geocoder = new google.maps.Geocoder();
+        var address = "10450 Eastborne Ave. Los Angeles, CA 90024";
+        geocoder.geocode(
+            {
+                'address': address
+            },
+            (results, status) => {
+                console.log(results[0].geometry.location);
+                console.log(status);
+                map.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location
+                });
+            }
+        )
+        geocoder.geocode(
+            {
+                'address': "955 2nd St. Santa Monica, CA 90403"
+            },
+            (results, status) => {
+                console.log(results[0].geometry.location);
+                console.log(status);
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location,
+                    icon: BitmapDescriptorFactory.HUE_AZURE
+                });
+                
+            }
+        )
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUvGCyLj9ZfMMSjwcO58las3cwKak3Ak8&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+
