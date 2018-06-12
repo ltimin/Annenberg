@@ -1,0 +1,10 @@
+C:\repos\github\annenberg\annenberg\Annenberg.Services\bin\Debug\Annenberg.Services.dll
+C:\repos\github\annenberg\annenberg\Annenberg.Services\bin\Debug\Annenberg.Services.pdb
+C:\repos\github\annenberg\annenberg\Annenberg.Services\bin\Debug\Newtonsoft.Json.dll
+C:\repos\github\annenberg\annenberg\Annenberg.Services\bin\Debug\System.Net.Http.Formatting.dll
+C:\repos\github\annenberg\annenberg\Annenberg.Services\bin\Debug\Newtonsoft.Json.xml
+C:\repos\github\annenberg\annenberg\Annenberg.Services\bin\Debug\System.Net.Http.Formatting.xml
+C:\repos\github\annenberg\annenberg\Annenberg.Services\obj\Debug\Annenberg.Services.csprojResolveAssemblyReference.cache
+C:\repos\github\annenberg\annenberg\Annenberg.Services\obj\Debug\Annenberg.Services.csproj.CoreCompileInputs.cache
+C:\repos\github\annenberg\annenberg\Annenberg.Services\obj\Debug\Annenberg.Services.dll
+C:\repos\github\annenberg\annenberg\Annenberg.Services\obj\Debug\Annenberg.Services.pdb

@@ -29,16 +29,16 @@ namespace Annenberg.Services
                         AnnenbergLandscape landscape = new AnnenbergLandscape();
                         landscape.Id = reader.GetInt32(0);
                         landscape.Organization = reader.GetString(1);
-                        landscape.Functions = reader.GetString(2);
-                        landscape.Approach = reader.GetString(3);
-                        landscape.OrganizationType = reader.GetString(4);
-                        landscape.OrganizationType2 = reader.GetString(5);
-                        landscape.AreaOfFocus = reader.GetString(6);
-                        landscape.Beneficiary = reader.GetString(7);
-                        landscape.Beneficiary2 = reader.GetString(8);
-                        landscape.BeneficiaryPopNum = reader.GetString(9);
-                        landscape.Geography = reader.GetString(10);
-                        landscape.Address = reader.GetString(11);
+                        landscape.Functions = reader["functions"] is DBNull ? (string)null : (string)reader["functions"];
+                        landscape.Approach = reader["approach"] is DBNull ? (string)null : (string)reader["approach"];
+                        landscape.OrganizationType = reader["organization_type"] is DBNull ? (string)null : (string)reader["organization_type"];
+                        landscape.OrganizationType2 = reader["organization_type_2"] is DBNull ? (string)null : (string)reader["organization_type_2"];
+                        landscape.AreaOfFocus = reader["area_of_focus"] is DBNull ? (string)null : (string)reader["area_of_focus"];
+                        landscape.Beneficiary = reader["beneficiary"] is DBNull ? (string)null : (string)reader["beneficiary"];
+                        landscape.Beneficiary2 = reader["beneficiary_2nd"] is DBNull ? (string)null : (string)reader["beneficiary_2nd"];
+                        landscape.BeneficiaryPopNum = reader["beneficiary_pop_num"] is DBNull ? (string)null : (string)reader["beneficiary_pop_num"];
+                        landscape.Geography = reader["geography"] is DBNull ? (string)null : (string)reader["geography"];
+                        landscape.Address = reader["address"] is DBNull ? (string)null : (string)reader["address"];
                         landscape.DateCreated = reader.GetDateTime(12);
                         landscape.DateModified = reader.GetDateTime(13);
                         if (landscapes == null)
